@@ -132,3 +132,10 @@ body {
     background-color: hsl(25, 97%, 53%);
     color: hsl(0, 0%, 100%);
 }
+
+.error {
+    padding-left: 10px;
+    color: #fff;
+    background-color: red;
+    margin-bottom: 0.5rem;
+}

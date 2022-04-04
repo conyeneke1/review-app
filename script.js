@@ -20,7 +20,7 @@ submitBtn.addEventListener('click', () => {
         error.innerHTML = "Please selecet a rating";
         error.style.display = 'block'
 
-        setTimeout(() => error.style.display = 'none',3000);
+        setTimeout(() => error.style.display = 'none',2000);
         return
     }
     let rateText = document.querySelector('.rating-choice');
