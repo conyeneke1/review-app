@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(216, 12%, 8%);
+    font-family: 'Overpass';
+}
+
+/* First Page Style */
+.container {
+    display: block;
+    background-color: hsl(213, 20%, 17%);
+    max-width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 2rem;
+}
+
+.icon {
+    margin: 2rem;
+    padding-top: 1rem;
+}
+
+.icon i {
+    border: 0.1rem solid transparent;
+    padding: 15px 15px 10px 15px;
+    border-radius: 50%;
+    background-color: hsl(215, 20%, 21%);
+}
+
+.description {
+    color: hsl(0, 0%, 100%);
+    padding: 0 2.3rem;
+}
+
+.description h1 {
+    padding-bottom: 1rem;
+}
+
+.description p {
+    color: hsl(217, 12%, 63%);
+    font-size: 15px;
+}
+
+.ratings {
+    display: flex;
+    padding: 2rem 2.4rem 0 2.4rem;
+    justify-content: space-between;
+}
+
+.ratings div {
+    background-color: hsl(215, 20%, 21%);
+    color: hsl(216, 12%, 54%);
+    font-weight: 700;
+    border: 0.1rem solid transparent;
+    padding: 1rem 1.2rem;
+    border-radius: 50%;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.ratings div:hover {
+    background-color: hsl(216, 12%, 54%);
+    color: hsl(0, 0%, 100%);
+}
+
+.ratings div:active {
+    background-color: hsl(25, 97%, 53%);
+}
+
+.btn {
+    margin: 2rem 2.4rem;
+    padding: 0.8rem 8.4rem;
+    border: 0.1rem solid hsl(25, 97%, 53%);
+    border-radius: 2rem;
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+    border: 0.1rem solid hsl(0, 0%, 100%);
+}
+
+/* Second Page Style */
+.rated {
+    display: none;
+    background-color: hsl(213, 20%, 17%);
+    max-width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 2rem;
+    text-align: center;
+}
+
+.image {
+    margin-top: 2.5rem;
+}
+
+.rating-choice {
+    margin: 1.2rem 6.3rem;
+    color: hsl(25, 97%, 53%);
+    border: 0.1rem solid hsl(215, 20%, 22%);
+    border-radius: 2rem;
+    border-width: 2px;
+    font-size: 15px;
+    padding: 5px 0;
+    background-color: hsl(215, 20%, 22%);
+}
+
+.text-details {
+    margin: 2rem 0;
+    color: hsl(0, 0%, 100%);
+}
+
+.text-details p {
+    padding-top: 0.8rem;
+    color: hsl(217, 12%, 63%);
+    font-size: 15px;
+    margin: 0 2rem;
+}
+
+.ratings div.selected {
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+}
