@@ -10,17 +10,16 @@ for(let i = 0; i < nums.length; i++) {
         selected = e.target.textContent;
         removeAllSelected()
         nums[i].classList.add('selected')
-        console.log(selected)
     })
 }
 
 submitBtn.addEventListener('click', () => {
     if (selected === undefined || selected === null) {
         error.classList.add('.error');
-        error.innerHTML = "Please selecet a rating";
+        error.innerHTML = "Please select a rating";
         error.style.display = 'block'
 
-        setTimeout(() => error.style.display = 'none',2000);
+        setTimeout(() => error.style.display = 'none',3000);
         return
     }
     let rateText = document.querySelector('.rating-choice');
